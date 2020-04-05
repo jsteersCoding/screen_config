@@ -1,0 +1,22 @@
+# Replace Ctrl+a keybinding with backticks (`)
+
+escape ``
+
+# Hotkeys for jumping between split screen regions
+
+bindkey "`^[OC" focus right
+bindkey "`^[OD" focus left
+bindkey "`^[OA" focus up
+bindkey "`^[OB" focus down
+
+# Caption and Hardline Status
+
+caption always "%{.KW} %-w%{.mW}[%n] %t%{.KW}%+w"
+
+hardstatus alwayslastline "%{G}Host: %H %{Y}Time/Date: %C:%s%A %{Y}%Y/%m/%d"
+
+# Colours
+
+termcapinfo xterm "Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm"
+term rxvt-unicode-256color
+
